@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Владислав — визуальный дизайнер</title>
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <button class="theme-button" id="themeButton" type="button">
+      Сменить тему
+    </button>
+
+    <main class="page">
+      <section class="about-me">
+        <div class="photo-block">
+          <div class="photo-frame">
+            <img
+              src="./image.png"
+              alt="Фотография Владислава"
+              class="profile-photo"
+            />
+          </div>
+        </div>
+
+        <article class="description">
+          <h1>Привет! Меня зовут Владислав</h1>
+
+          <p class="intro">
+            Создаю визуальные решения для маркетинговых, корпоративных и
+            продуктовых задач.
+          </p>
+
+          <p>
+            Работаю с айдентикой, баннерами, каталогами, инструкциями, схемами и
+            digital-материалами. Помогаю превращать сложную информацию в
+            понятную и выразительную визуальную систему.
+          </p>
+
+          <div class="skills" role="group" aria-label="Направления работы">
+            <button
+              class="skill-tab active"
+              type="button"
+              data-tab="website"
+              aria-pressed="true"
+            >
+              Веб-сайты
+            </button>
+
+            <button
+              class="skill-tab"
+              type="button"
+              data-tab="catalogs"
+              aria-pressed="false"
+            >
+              Каталоги
+            </button>
+
+            <button
+              class="skill-tab"
+              type="button"
+              data-tab="digital"
+              aria-pressed="false"
+            >
+              Digital
+            </button>
+
+            <button
+              class="skill-tab"
+              type="button"
+              data-tab="banners"
+              aria-pressed="false"
+            >
+              Баннеры
+            </button>
+          </div>
+
+          <div class="quote" aria-live="polite">
+            <div class="tab-panel" data-panel="website">
+              Занимаюсь созданием и развитием веб-сайтов и мобильных версий.
+              Внедряю дизайн-системы и формирую UI-киты, обеспечивая
+              единообразие интерфейсов и системный подход к проектированию.
+            </div>
+
+            <div class="tab-panel" data-panel="catalogs" hidden>
+              Занимаюсь вёрсткой и наполнением корпоративных каталогов -
+              библиотек стандартизированных проектных решений (проёмы, окна,
+              балконы, материалы и др.).
+            </div>
+
+            <div class="tab-panel" data-panel="digital" hidden>
+              Реализую полный цикл: от вёрстки каталогов проектных решений до их
+              интеграции в веб-ресурсы и мобильные версии. Обеспечиваю
+              единообразие цифровой среды, подготовку технической документации и
+              соблюдение стандартов безопасности при разработке.
+            </div>
+
+            <div class="tab-panel" data-panel="banners" hidden>
+              Занимаюсь разработкой баннеров и рекламно-информационных
+              материалов.
+            </div>
+          </div>
+
+          <div class="social-area">
+            <p class="section-title">Мой сайт:</p>
+
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://dprofile.ru/vladural17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Dprofile
+                  <span>↗</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Vladislav Design</p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
